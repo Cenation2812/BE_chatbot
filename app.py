@@ -1,7 +1,8 @@
 from flask import Flask,jsonify, redirect, render_template
 import openai
 from transformers import pipeline
-import json, requests
+import json
+
 pipe = pipeline('summarization', "dominguesm/positive-reframing-en")
 
 app = Flask(__name__)
